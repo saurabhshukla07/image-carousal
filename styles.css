@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-image{
+    width: 60vw;
+    height: 50rem;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2)0px 7px 29px 0px;
+    background-image: url(./images/milky-way-8999255_1280.jpg);
+    background-size: cover;
+    animation: carousal 20s linear infinite;
+}
+
+@keyframes carousal{
+    0%{
+        background-image: url(./images/fog-8208493_1280.jpg);
+    }
+    20%{
+        background-image: url(./images/monument-6387465_1280.jpg);
+    }
+    40%{
+        background-image: url(./images/motorcycle-8306765_1280.jpg);
+    }
+    60%{
+        background-image: url(./images/milky-way-8999255_1280.jpg);
+    }
+    80%{
+        background-image: url(./images/fog-8208493_1280.jpg);
+    }
+    100%{
+        background-image: url(./images/monument-6387465_1280.jpg);
+    }
+    
+}
